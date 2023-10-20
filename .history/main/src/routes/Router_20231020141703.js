@@ -7,7 +7,7 @@ import BookingRequestsTable from 'src/views/tables/BookingRequestsTable';
 import LoginGuest from 'src/views/authentication/auth2/LoginGuest';
 import RegisterGuest from 'src/views/authentication/auth2/RegisterGuest';
 import LayoutGuest from 'src/layouts/full/LayoutGuest';
-import RoomGuest from 'src/views/apps/Rooms/RoomGuest';
+import EcommerceGuest from 'src/views/apps/Rooms/EcommerceGuest';
 import EcommerceDetailGuest from 'src/views/apps/Rooms/EcommerceDetailsGuest';
 import FbRoomEditForm from 'src/components/forms/form-layouts/FbRoomEditForm';
 import BasicTableBookingStatus from 'src/views/tables/BasicTableBookingStatus';
@@ -49,7 +49,7 @@ const Router = [
     element: <LayoutGuest />,
     children: [
      
-      { path: `${guestname}/explore-rooms/`, exact: true, element: <RoomGuest /> },
+      { path: `${guestname}/explore-rooms/`, exact: true, element: <EcommerceGuest /> },
  
       { path: `${guestname}/room/detail/${ownername}/:id/`, element: <EcommerceDetailGuest /> },
       { path: `${guestname}/booking-status/`, element: <BasicTableBookingStatus /> },
